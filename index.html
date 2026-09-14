@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lingua Verna — Levantine Arabic Review</title>
+<style>
+  :root {
+    --bg: #f7f5f0;
+    --card: #ffffff;
+    --ink: #2b2620;
+    --muted: #766f63;
+    --accent: #b5651d;
+    --accent-dark: #8a4c15;
+    --good: #2e7d32;
+    --bad: #c62828;
+    --border: #e3ddd0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+  }
+  header {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--card);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  header h1 {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  header h1 .sub {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--muted);
+    font-weight: normal;
+  }
+  #stats-bar {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.25rem;
+  }
+  .instructions {
+    background: #fdf6ec;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+  .quiz-cta { text-align: center; margin-bottom: 1.5rem; }
+  .lesson-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.9rem;
+  }
+  .lesson-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem;
+  }
+  .lesson-num { font-size: 0.75rem; color: var(--accent); font-weight: 600; text-transform: uppercase; }
+  .lesson-title { font-weight: 600; margin: 0.25rem 0; }
+  .lesson-meta { font-size: 0.75rem; color: var(--muted); margin-bottom: 0.75rem; }
+  .lesson-actions { display: flex; gap: 0.5rem; }
+
+  .btn {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--ink);
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  .btn:hover { background: #f0ebe0; }
+  .btn-primary {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent-dark);
+  }
+  .btn-primary:hover { background: var(--accent-dark); }
+  .btn-big { font-size: 1rem; padding: 0.75rem 1.5rem; }
+  .btn-icon {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+    vertical-align: middle;
+  }
+
+  .session-header {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .lesson-tag {
+    background: #eee7d8;
+    border-radius: 5px;
+    padding: 0.1rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .dialogue-card, .question-card, .summary-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem;
+  }
+  .dlg-line { padding: 0.6rem 0; border-bottom: 1px solid var(--border); }
+  .dlg-line:last-child { border-bottom: none; }
+  .dlg-speaker { font-weight: 600; color: var(--accent); }
+  .dlg-arabic { font-size: 1.2rem; }
+  .dlg-roman { color: var(--muted); font-size: 0.85rem; }
+  .dlg-english { color: var(--muted); font-size: 0.85rem; margin-top: 0.15rem; }
+
+  .prompt-label { font-size: 0.8rem; color: var(--muted); }
+  .prompt-main { font-size: 1.6rem; margin: 0.35rem 0; }
+  .prompt-sub { color: var(--muted); margin-bottom: 0.5rem; }
+
+  #answer-form { display: flex; gap: 0.5rem; margin-top: 0.75rem; }
+  #answer-input {
+    flex: 1;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  #answer-input:disabled { background: #f2efe8; }
+
+  .feedback { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+  .feedback-verdict { font-weight: 700; margin-bottom: 0.3rem; }
+  .feedback.correct .feedback-verdict { color: var(--good); }
+  .feedback.incorrect .feedback-verdict { color: var(--bad); }
+  .feedback-answer { font-size: 1.1rem; margin-bottom: 0.25rem; }
+  .feedback-alt, .feedback-grammar { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .feedback #next-q, .feedback-answer + button { margin-top: 0.5rem; }
+
+  .session-actions { margin-top: 1rem; display: flex; gap: 0.5rem; }
+
+  .summary-card { text-align: center; }
+  .summary-title { font-size: 1.1rem; margin-bottom: 0.5rem; }
+  .summary-score { font-size: 2rem; font-weight: 700; color: var(--accent); margin-bottom: 1rem; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Lingua Verna<span class="sub">Levantine Arabic — Lessons 4&ndash;10 review</span></h1>
+    <div id="stats-bar"></div>
+  </header>
+  <main>
+    <div class="instructions">
+      <strong>How to use:</strong> Pick a lesson to <strong>Study</strong> (new-material lessons show a
+      dialogue first) or <strong>Drill</strong> it directly, or hit <strong>Start Mixed Quiz</strong> for a
+      SRS-prioritized mix across every lesson. Type your answer and press Check/Enter &mdash; answers are
+      judged by romanization (e.g. "kifak" or "kifek" both work), not Arabic script. Wrong answers resurface
+      sooner next time.
+    </div>
+    <div id="view"></div>
+  </main>
+
+  <script src="js/data/lesson-04.js"></script>
+  <script src="js/data/lesson-05.js"></script>
+  <script src="js/data/lesson-06.js"></script>
+  <script src="js/data/lesson-07.js"></script>
+  <script src="js/data/lesson-08.js"></script>
+  <script src="js/data/lesson-09.js"></script>
+  <script src="js/data/lesson-10.js"></script>
+  <script src="js/srs.js"></script>
+  <script src="js/matcher.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/ui.js"></script>
+  <script>
+    window.LingoUI.init();
+  </script>
+</body>
+</html>
