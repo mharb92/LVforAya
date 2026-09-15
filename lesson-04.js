@@ -1,0 +1,157 @@
+window.LingoData = window.LingoData || {};
+window.LingoData.lesson04 = {
+  id: 4,
+  title: "People & Adjectives; Colors & Clothes",
+  tier: "reinforcement",
+  sections: [
+    { heading: "Vocab — Adjectives", note: "Source used '2' for the glottal-stop qaf sound (e.g. 2aSiir); respelled here with apostrophe (') per project's 3/7-only numeral convention, e.g. 'aSiir." },
+    { heading: "Vocab — People", note: "'zalame' (Southern) and 'ríjjaal' (Northern) both mean 'man'; per Southern-primary rule, zalame is the canonical vocab entry with ríjjaal stored as an alternate regional term." },
+    { heading: "Grammar — Sun & Moon Letters + Definite Article 'il-'", note: "" },
+    { heading: "Example Phrases — Person & Adjective", note: "Three sentence patterns: 'A' (bare noun+adjective), 'The' (article on both), 'Is' (article on noun only, no-verb equational sentence)." },
+    { heading: "Vocab — Colors", note: "Masculine/feminine adjective pairs; feminine typically ends in -a/ة." },
+    { heading: "Vocab — Clothes", note: "'bluuze' (Southern) and 'kanze' (Northern) both mean 't-shirt'; bluuze is canonical, kanze stored as an alternate." },
+    { heading: "Example Phrases — Clothing & Color", note: "Same three-pattern structure (A/The/Is) as the Person & Adjective phrases." },
+    { heading: "Conversation Group — Greeting Basics", note: "" },
+    { heading: "Conversation Group — Greetings: Time of Day", note: "" },
+    { heading: "Reading Exercise — Practice Sentences", note: "Source gave Arabic-only sentences with no per-item romanization/English; both were reconstructed here from the lesson's vocab tables. Order follows the source's 'raw block' listing, which the extraction flagged as more reliable than the numbered summary lists (the Clothing & Color numbered list had an acknowledged duplicate/miscount)." }
+  ],
+  items: [
+    // Vocab — Adjectives
+    { id: "l4-v-001", lessonId: 4, type: "vocab", arabic: "طَوِيل", romanization: "Tawiil", altRomanizations: [], english: "tall (m)", direction: "both", grammarNote: "Adjectives agree in gender with the noun they describe; feminine typically adds -e/ة." },
+    { id: "l4-v-002", lessonId: 4, type: "vocab", arabic: "طَوِيلة", romanization: "Tawiile", altRomanizations: [], english: "tall (f)", direction: "both", grammarNote: null },
+    { id: "l4-v-003", lessonId: 4, type: "vocab", arabic: "قَصِير", romanization: "'aSiir", altRomanizations: [], english: "short (m)", direction: "both", grammarNote: null },
+    { id: "l4-v-004", lessonId: 4, type: "vocab", arabic: "قَصِيرة", romanization: "'aSiire", altRomanizations: [], english: "short (f)", direction: "both", grammarNote: null },
+    // Vocab — People
+    { id: "l4-v-005", lessonId: 4, type: "vocab", arabic: "وَلَد", romanization: "walad", altRomanizations: [], english: "boy", direction: "both", grammarNote: null },
+    { id: "l4-v-006", lessonId: 4, type: "vocab", arabic: "بِنْت", romanization: "bínt", altRomanizations: [], english: "girl", direction: "both", grammarNote: null },
+    { id: "l4-v-007", lessonId: 4, type: "vocab", arabic: "مَرَة", romanization: "mara", altRomanizations: [], english: "woman", direction: "both", grammarNote: null },
+    { id: "l4-v-008", lessonId: 4, type: "vocab", arabic: "زَلَمة", romanization: "zalame", altRomanizations: ["ríjjaal"], english: "man", direction: "both", grammarNote: "Zalame (Southern, canonical) is one of the rare masculine nouns ending in ta marbouta (ة); ríjjaal is the accepted Northern alternate term." },
+    // Vocab — Colors
+    { id: "l4-v-009", lessonId: 4, type: "vocab", arabic: "أحْمَر", romanization: "a7mar", altRomanizations: [], english: "red (m)", direction: "both", grammarNote: "Colors have separate masculine and feminine forms; feminine typically ends in -a/ة." },
+    { id: "l4-v-010", lessonId: 4, type: "vocab", arabic: "حَمْرَة", romanization: "7amra", altRomanizations: [], english: "red (f)", direction: "both", grammarNote: null },
+    { id: "l4-v-011", lessonId: 4, type: "vocab", arabic: "أزْرَق", romanization: "azra'", altRomanizations: [], english: "blue (m)", direction: "both", grammarNote: null },
+    { id: "l4-v-012", lessonId: 4, type: "vocab", arabic: "زَرْقَة", romanization: "zar'a", altRomanizations: [], english: "blue (f)", direction: "both", grammarNote: null },
+    { id: "l4-v-013", lessonId: 4, type: "vocab", arabic: "أصْفَر", romanization: "aSfar", altRomanizations: [], english: "yellow (m)", direction: "both", grammarNote: null },
+    { id: "l4-v-014", lessonId: 4, type: "vocab", arabic: "صَفْرَة", romanization: "Safra", altRomanizations: [], english: "yellow (f)", direction: "both", grammarNote: null },
+    { id: "l4-v-015", lessonId: 4, type: "vocab", arabic: "أخْضَر", romanization: "akhDar", altRomanizations: [], english: "green (m)", direction: "both", grammarNote: null },
+    { id: "l4-v-016", lessonId: 4, type: "vocab", arabic: "خَضْرَة", romanization: "khaDra", altRomanizations: [], english: "green (f)", direction: "both", grammarNote: null },
+    // Vocab — Clothes
+    { id: "l4-v-017", lessonId: 4, type: "vocab", arabic: "فِسْتان", romanization: "fístaan", altRomanizations: [], english: "dress", direction: "both", grammarNote: null },
+    { id: "l4-v-018", lessonId: 4, type: "vocab", arabic: "بَنْطَلون", romanization: "banTaloon", altRomanizations: [], english: "pants", direction: "both", grammarNote: null },
+    { id: "l4-v-019", lessonId: 4, type: "vocab", arabic: "بْلُوزة", romanization: "bluuze", altRomanizations: ["kanze"], english: "t-shirt", direction: "both", grammarNote: null },
+    { id: "l4-v-020", lessonId: 4, type: "vocab", arabic: "لابِس", romanization: "laabís", altRomanizations: [], english: "wearing (m)", direction: "both", grammarNote: null },
+    { id: "l4-v-021", lessonId: 4, type: "vocab", arabic: "لابِسة", romanization: "laabse", altRomanizations: [], english: "wearing (f)", direction: "both", grammarNote: null },
+
+    // Grammar — Sun & Moon Letters + Definite Article
+    { id: "l4-g-001", lessonId: 4, type: "grammar", arabic: "ال", romanization: "íl-", altRomanizations: [], english: "the (definite article)", direction: "both", grammarNote: "Definite article 'il-'; stays as íl- before moon letters, assimilates (doubling the following consonant) before sun letters." },
+    { id: "l4-g-002", lessonId: 4, type: "grammar", arabic: "المَرة", romanization: "íl-mara", altRomanizations: [], english: "the woman", direction: "both", grammarNote: "Moon letter example — م is a moon letter, so 'l' is pronounced clearly." },
+    { id: "l4-g-003", lessonId: 4, type: "grammar", arabic: "الوَلَد", romanization: "íl-walad", altRomanizations: [], english: "the boy", direction: "both", grammarNote: "Moon letter example — و is a moon letter." },
+    { id: "l4-g-004", lessonId: 4, type: "grammar", arabic: "القَصِير", romanization: "íl-'aSiir", altRomanizations: [], english: "the short (m)", direction: "both", grammarNote: "Moon letter example — ق is a moon letter." },
+    { id: "l4-g-005", lessonId: 4, type: "grammar", arabic: "البِنْت", romanization: "íl-bínt", altRomanizations: [], english: "the girl", direction: "both", grammarNote: "Moon letter example — ب is a moon letter." },
+    { id: "l4-g-006", lessonId: 4, type: "grammar", arabic: "الَّزَلمة", romanization: "íz-zalame", altRomanizations: [], english: "the man", direction: "both", grammarNote: "Sun letter example — ز is a sun letter, so 'l' assimilates into it, doubling the consonant (íl- + zalame → íz-zalame)." },
+    { id: "l4-g-007", lessonId: 4, type: "grammar", arabic: "الِّرّجال", romanization: "ír-ríjjaal", altRomanizations: [], english: "the men/man", direction: "both", grammarNote: "Sun letter example — ر is a sun letter." },
+    { id: "l4-g-008", lessonId: 4, type: "grammar", arabic: "الطَّوِيل", romanization: "íT-Tawiil", altRomanizations: [], english: "the tall (m)", direction: "both", grammarNote: "Sun letter example — ط is a sun letter." },
+
+    // Example Phrases — Person & Adjective (pattern group 1: walad/bínt + 'aSiir/'aSiire)
+    { id: "l4-p-001", lessonId: 4, type: "phrase", arabic: "وَلَد قَصِير", romanization: "walad 'aSiir", altRomanizations: [], english: "a short boy", direction: "both", grammarNote: "Pattern 'A': bare noun + adjective, no article." },
+    { id: "l4-p-002", lessonId: 4, type: "phrase", arabic: "الوَلَد القَصِير", romanization: "íl-walad íl-'aSiir", altRomanizations: [], english: "the short boy", direction: "both", grammarNote: "Pattern 'The': article on both noun and adjective." },
+    { id: "l4-p-003", lessonId: 4, type: "phrase", arabic: "الوَلَد قَصِير", romanization: "íl-walad 'aSiir", altRomanizations: [], english: "the boy is short", direction: "both", grammarNote: "Pattern 'Is': article on noun only — equational 'no-verb' sentence." },
+    { id: "l4-p-004", lessonId: 4, type: "phrase", arabic: "بِنْت قَصِيرة", romanization: "bínt 'aSiire", altRomanizations: [], english: "a short girl", direction: "both", grammarNote: "Pattern 'A': bare noun + adjective, no article." },
+    { id: "l4-p-005", lessonId: 4, type: "phrase", arabic: "البِنْت القَصِيرة", romanization: "íl-bínt íl-'aSiire", altRomanizations: [], english: "the short girl", direction: "both", grammarNote: "Pattern 'The': article on both noun and adjective." },
+    { id: "l4-p-006", lessonId: 4, type: "phrase", arabic: "البِنْت قَصِيرة", romanization: "íl-bínt 'aSiire", altRomanizations: [], english: "the girl is short", direction: "both", grammarNote: "Pattern 'Is': article on noun only — equational 'no-verb' sentence." },
+    // Example Phrases — Person & Adjective (pattern group 2: zalame/mara + Tawiil/Tawiile)
+    { id: "l4-p-007", lessonId: 4, type: "phrase", arabic: "زَلَمة طَوِيل", romanization: "zalame Tawiil", altRomanizations: [], english: "a tall man", direction: "both", grammarNote: "Pattern 'A': bare noun + adjective, no article." },
+    { id: "l4-p-008", lessonId: 4, type: "phrase", arabic: "الَّزَلمة الطَّوِيل", romanization: "íz-zalame íT-Tawiil", altRomanizations: [], english: "the tall man", direction: "both", grammarNote: "Pattern 'The': article on both noun and adjective." },
+    { id: "l4-p-009", lessonId: 4, type: "phrase", arabic: "الَّزَلمة طَوِيل", romanization: "íz-zalame Tawiil", altRomanizations: [], english: "the man is tall", direction: "both", grammarNote: "Pattern 'Is': article on noun only — equational 'no-verb' sentence." },
+    { id: "l4-p-010", lessonId: 4, type: "phrase", arabic: "مَرَة طَوِيلة", romanization: "mara Tawiile", altRomanizations: [], english: "a tall woman", direction: "both", grammarNote: "Pattern 'A': bare noun + adjective, no article." },
+    { id: "l4-p-011", lessonId: 4, type: "phrase", arabic: "المَرة الطَّوِيلة", romanization: "íl-mara íT-Tawiile", altRomanizations: [], english: "the tall woman", direction: "both", grammarNote: "Pattern 'The': article on both noun and adjective." },
+    { id: "l4-p-012", lessonId: 4, type: "phrase", arabic: "المَرة طَوِيلة", romanization: "íl-mara Tawiile", altRomanizations: [], english: "the woman is tall", direction: "both", grammarNote: "Pattern 'Is': article on noun only — equational 'no-verb' sentence." },
+
+    // Example Phrases — Clothing & Color (pattern group 1: fístaan/bluuze + a7mar/zar'a)
+    { id: "l4-p-013", lessonId: 4, type: "phrase", arabic: "فِسْتان أحْمَر", romanization: "fístaan a7mar", altRomanizations: [], english: "a red dress", direction: "both", grammarNote: "Pattern 'A': bare noun + adjective, no article." },
+    { id: "l4-p-014", lessonId: 4, type: "phrase", arabic: "الِفْستان الأحْمَر", romanization: "íl-fístaan íl-a7mar", altRomanizations: [], english: "the red dress", direction: "both", grammarNote: "Pattern 'The': article on both noun and adjective." },
+    { id: "l4-p-015", lessonId: 4, type: "phrase", arabic: "الِفْستان أحْمَر", romanization: "íl-fístaan a7mar", altRomanizations: [], english: "the dress is red", direction: "both", grammarNote: "Pattern 'Is': article on noun only — equational 'no-verb' sentence." },
+    { id: "l4-p-016", lessonId: 4, type: "phrase", arabic: "بْلُوزة زَرْقَة", romanization: "bluuze zar'a", altRomanizations: [], english: "a blue t-shirt", direction: "both", grammarNote: "Pattern 'A': bare noun + adjective, no article." },
+    { id: "l4-p-017", lessonId: 4, type: "phrase", arabic: "البْلُوزة الَّزْرْقَة", romanization: "íl-bluuze íz-zar'a", altRomanizations: [], english: "the blue t-shirt", direction: "both", grammarNote: "Pattern 'The': article on both noun and adjective." },
+    { id: "l4-p-018", lessonId: 4, type: "phrase", arabic: "البْلُوزة زَرْقَة", romanization: "íl-bluuze zar'a", altRomanizations: [], english: "the t-shirt is blue", direction: "both", grammarNote: "Pattern 'Is': article on noun only — equational 'no-verb' sentence." },
+    // Example Phrases — Clothing & Color (pattern group 2: banTaloon/kanze + aSfar/khaDra)
+    { id: "l4-p-019", lessonId: 4, type: "phrase", arabic: "بَنْطَلون أصْفَر", romanization: "banTaloon aSfar", altRomanizations: [], english: "yellow pants", direction: "both", grammarNote: "Pattern 'A': bare noun + adjective, no article." },
+    { id: "l4-p-020", lessonId: 4, type: "phrase", arabic: "البَنْطَلون الأصْفَر", romanization: "íl-banTaloon íl-aSfar", altRomanizations: [], english: "the yellow pants", direction: "both", grammarNote: "Pattern 'The': article on both noun and adjective." },
+    { id: "l4-p-021", lessonId: 4, type: "phrase", arabic: "البَنْطَلون أصْفَر", romanization: "íl-banTaloon aSfar", altRomanizations: [], english: "the pants are yellow", direction: "both", grammarNote: "Pattern 'Is': article on noun only — equational 'no-verb' sentence." },
+    { id: "l4-p-022", lessonId: 4, type: "phrase", arabic: "كَنزة خَضْرَة", romanization: "kanze khaDra", altRomanizations: [], english: "a green t-shirt", direction: "both", grammarNote: "Pattern 'A': bare noun + adjective, no article." },
+    { id: "l4-p-023", lessonId: 4, type: "phrase", arabic: "الكَنزة الخَضْرَة", romanization: "íl-kanze íl-khaDra", altRomanizations: [], english: "the green t-shirt", direction: "both", grammarNote: "Pattern 'The': article on both noun and adjective." },
+    { id: "l4-p-024", lessonId: 4, type: "phrase", arabic: "الكَنزة خَضْرَة", romanization: "íl-kanze khaDra", altRomanizations: [], english: "the t-shirt is green", direction: "both", grammarNote: "Pattern 'Is': article on noun only — equational 'no-verb' sentence." },
+
+    // Conversation Group — Greeting Basics
+    { id: "l4-p-025", lessonId: 4, type: "phrase", arabic: "أنا إسْمي...", romanization: "ana ísmi...", altRomanizations: [], english: "my name is [name]", direction: "both", grammarNote: null },
+    { id: "l4-p-026", lessonId: 4, type: "phrase", arabic: "أنا...", romanization: "ana...", altRomanizations: [], english: "I'm [name]", direction: "both", grammarNote: null },
+    { id: "l4-p-027", lessonId: 4, type: "phrase", arabic: "مَرْحَبا", romanization: "mar7aba", altRomanizations: [], english: "hello", direction: "both", grammarNote: null },
+    { id: "l4-p-028", lessonId: 4, type: "phrase", arabic: "أهْلاً", romanization: "ahlan", altRomanizations: [], english: "welcome", direction: "both", grammarNote: null },
+    { id: "l4-p-029", lessonId: 4, type: "phrase", arabic: "أهْلين", romanization: "ahleen", altRomanizations: [], english: "hi (response)", direction: "both", grammarNote: null },
+    // Conversation Group — Greeting Basics, combined
+    { id: "l4-p-030", lessonId: 4, type: "phrase", arabic: "مَرْحَبا أنا...", romanization: "mar7aba, ana...", altRomanizations: [], english: "hello, I'm...", direction: "both", grammarNote: null },
+    { id: "l4-p-031", lessonId: 4, type: "phrase", arabic: "أهلاً أنا إسْمي...", romanization: "ahlan, ana ísmi...", altRomanizations: [], english: "welcome, my name is...", direction: "both", grammarNote: null },
+    { id: "l4-p-032", lessonId: 4, type: "phrase", arabic: "مَرْحَبا أنا إسْمي...", romanization: "mar7aba, ana ísmi...", altRomanizations: [], english: "hello, my name is...", direction: "both", grammarNote: null },
+    // Conversation Group — gendered "what's your name?" follow-up
+    { id: "l4-p-033", lessonId: 4, type: "phrase", arabic: "وإنْتَ شو إسْمَك؟", romanization: "w-ínte, shu ísmak?", altRomanizations: [], english: "and you (m), what's your name?", direction: "both", grammarNote: "Masculine 'you': ínte / ísmak (-ak suffix)." },
+    { id: "l4-p-034", lessonId: 4, type: "phrase", arabic: "وإنْتي شو إسِمِك؟", romanization: "w-ínti, shu ísmek?", altRomanizations: [], english: "and you (f), what's your name?", direction: "both", grammarNote: "Feminine 'you': ínti / ísmek (-ek suffix)." },
+
+    // Conversation Group — Greetings: Time of Day
+    { id: "l4-p-035", lessonId: 4, type: "phrase", arabic: "صَباح الخير", romanization: "Sabaa7 íl-kheer", altRomanizations: [], english: "Good Morning!", direction: "both", grammarNote: "Literally 'morning of goodness'." },
+    { id: "l4-p-036", lessonId: 4, type: "phrase", arabic: "صَباح الُّنور", romanization: "Sabaa7 ín-nour", altRomanizations: [], english: "Good Morning (to you)!", direction: "both", grammarNote: "Literally 'morning of light'; conventional response to Sabaa7 íl-kheer." },
+    { id: "l4-p-037", lessonId: 4, type: "phrase", arabic: "مَسا الخير", romanization: "masa íl-kheer", altRomanizations: [], english: "Good Evening!", direction: "both", grammarNote: "Literally 'evening of goodness'." },
+    { id: "l4-p-038", lessonId: 4, type: "phrase", arabic: "مَسا الُّنور", romanization: "masa ín-nour", altRomanizations: [], english: "Good Evening (to you)!", direction: "both", grammarNote: "Literally 'evening of light'; conventional response to masa íl-kheer." },
+
+    // Reading Exercise — Practice Sentences (Person & Adjective column, raw-block order)
+    { id: "l4-s-001", lessonId: 4, type: "sentence", arabic: "وَلَد طَوِيل.", romanization: "walad Tawiil.", altRomanizations: [], english: "a boy is tall / a tall boy", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-002", lessonId: 4, type: "sentence", arabic: "رِجّال طَوِيل.", romanization: "ríjjaal Tawiil.", altRomanizations: [], english: "a man is tall (ríjjaal variant)", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-003", lessonId: 4, type: "sentence", arabic: "البِنت القَصِيرة.", romanization: "íl-bínt íl-'aSiire.", altRomanizations: [], english: "the short girl", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-004", lessonId: 4, type: "sentence", arabic: "الوَلَد القَصِير.", romanization: "íl-walad íl-'aSiir.", altRomanizations: [], english: "the short boy", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-005", lessonId: 4, type: "sentence", arabic: "بِنت قَصِيرة.", romanization: "bínt 'aSiire.", altRomanizations: [], english: "a short girl", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-006", lessonId: 4, type: "sentence", arabic: "المَرَة الطَّوِيلة.", romanization: "íl-mara íT-Tawiile.", altRomanizations: [], english: "the tall woman", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-007", lessonId: 4, type: "sentence", arabic: "الوَلَد طَوِيل.", romanization: "íl-walad Tawiil.", altRomanizations: [], english: "the boy is tall", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-008", lessonId: 4, type: "sentence", arabic: "الَّزَلمة طَوِيل.", romanization: "íz-zalame Tawiil.", altRomanizations: [], english: "the man is tall", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-009", lessonId: 4, type: "sentence", arabic: "رِجّال قَصِير.", romanization: "ríjjaal 'aSiir.", altRomanizations: [], english: "a short man", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-010", lessonId: 4, type: "sentence", arabic: "بِنت قَصِيرة.", romanization: "bínt 'aSiire.", altRomanizations: [], english: "a short girl", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-011", lessonId: 4, type: "sentence", arabic: "المَرَة قَصِيرة.", romanization: "íl-mara 'aSiire.", altRomanizations: [], english: "the woman is short", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-012", lessonId: 4, type: "sentence", arabic: "الِّرّجال الطَّوِيل.", romanization: "ír-ríjjaal íT-Tawiil.", altRomanizations: [], english: "the tall man", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-013", lessonId: 4, type: "sentence", arabic: "البِنت طَوِيلة.", romanization: "íl-bínt Tawiile.", altRomanizations: [], english: "the girl is tall", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-014", lessonId: 4, type: "sentence", arabic: "وَلَد قَصِير.", romanization: "walad 'aSiir.", altRomanizations: [], english: "a short boy", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-015", lessonId: 4, type: "sentence", arabic: "مَرَة طَوِيلة.", romanization: "mara Tawiile.", altRomanizations: [], english: "a tall woman", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-016", lessonId: 4, type: "sentence", arabic: "الَّزَلمة قَصِير.", romanization: "íz-zalame 'aSiir.", altRomanizations: [], english: "the man is short", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-017", lessonId: 4, type: "sentence", arabic: "البِنت الطَّوِيلة.", romanization: "íl-bínt íT-Tawiile.", altRomanizations: [], english: "the tall girl", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-018", lessonId: 4, type: "sentence", arabic: "الوَلَد قَصِير.", romanization: "íl-walad 'aSiir.", altRomanizations: [], english: "the boy is short", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-019", lessonId: 4, type: "sentence", arabic: "الَّزَلمة القَصِير.", romanization: "íz-zalame íl-'aSiir.", altRomanizations: [], english: "the short man", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-020", lessonId: 4, type: "sentence", arabic: "مَرَة قَصِيرة.", romanization: "mara 'aSiire.", altRomanizations: [], english: "a short woman", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-021", lessonId: 4, type: "sentence", arabic: "المَرَة طَوِيلة.", romanization: "íl-mara Tawiile.", altRomanizations: [], english: "the woman is tall", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-022", lessonId: 4, type: "sentence", arabic: "الوَلَد الطَّوِيل.", romanization: "íl-walad íT-Tawiil.", altRomanizations: [], english: "the tall boy", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-023", lessonId: 4, type: "sentence", arabic: "بِنت طَوِيلة.", romanization: "bínt Tawiile.", altRomanizations: [], english: "a tall girl", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-024", lessonId: 4, type: "sentence", arabic: "زَلَمة طَوِيل.", romanization: "zalame Tawiil.", altRomanizations: [], english: "a tall man", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-025", lessonId: 4, type: "sentence", arabic: "المَرَة القَصِيرة.", romanization: "íl-mara íl-'aSiire.", altRomanizations: [], english: "the short woman", direction: "ar->en", grammarNote: null },
+
+    // Reading Exercise — Practice Sentences (Clothing & Color column, raw-block order)
+    { id: "l4-s-026", lessonId: 4, type: "sentence", arabic: "الِفستان أخْضَر.", romanization: "íl-fístaan akhDar.", altRomanizations: [], english: "the dress is green", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-027", lessonId: 4, type: "sentence", arabic: "الِفستان أصْفَر.", romanization: "íl-fístaan aSfar.", altRomanizations: [], english: "the dress is yellow", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-028", lessonId: 4, type: "sentence", arabic: "فِستان أصْفَر.", romanization: "fístaan aSfar.", altRomanizations: [], english: "a yellow dress", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-029", lessonId: 4, type: "sentence", arabic: "الكَنْزة زَرْقَة.", romanization: "íl-kanze zar'a.", altRomanizations: [], english: "the t-shirt is blue", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-030", lessonId: 4, type: "sentence", arabic: "الكَنزة صَفْرَة.", romanization: "íl-kanze Safra.", altRomanizations: [], english: "the t-shirt is yellow", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-031", lessonId: 4, type: "sentence", arabic: "البَنْطلون أحْمَر.", romanization: "íl-banTaloon a7mar.", altRomanizations: [], english: "the pants are red", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-032", lessonId: 4, type: "sentence", arabic: "بَنْطلون أحْمَر.", romanization: "banTaloon a7mar.", altRomanizations: [], english: "red pants", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-033", lessonId: 4, type: "sentence", arabic: "كَنزة صَفْرَة.", romanization: "kanze Safra.", altRomanizations: [], english: "a yellow t-shirt", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-034", lessonId: 4, type: "sentence", arabic: "بْلُوزة زَرْقَة.", romanization: "bluuze zar'a.", altRomanizations: [], english: "a blue t-shirt", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-035", lessonId: 4, type: "sentence", arabic: "البْلُوزة الخَضْرَة.", romanization: "íl-bluuze íl-khaDra.", altRomanizations: [], english: "the green t-shirt", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-036", lessonId: 4, type: "sentence", arabic: "بَنْطلون أخْضَر.", romanization: "banTaloon akhDar.", altRomanizations: [], english: "green pants", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-037", lessonId: 4, type: "sentence", arabic: "بْلُوزة خَضْرَة.", romanization: "bluuze khaDra.", altRomanizations: [], english: "a green t-shirt", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-038", lessonId: 4, type: "sentence", arabic: "البَنْطلون أخْضَر.", romanization: "íl-banTaloon akhDar.", altRomanizations: [], english: "the pants are green", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-039", lessonId: 4, type: "sentence", arabic: "فِستان أزْرَق.", romanization: "fístaan azra'.", altRomanizations: [], english: "a blue dress", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-040", lessonId: 4, type: "sentence", arabic: "البْلُوزة الَّزْرقَة.", romanization: "íl-bluuze íz-zar'a.", altRomanizations: [], english: "the blue t-shirt", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-041", lessonId: 4, type: "sentence", arabic: "بْلُوزة حَمْرَة.", romanization: "bluuze 7amra.", altRomanizations: [], english: "a red t-shirt", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-042", lessonId: 4, type: "sentence", arabic: "الِفْستان الأحْمَر.", romanization: "íl-fístaan íl-a7mar.", altRomanizations: [], english: "the red dress", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-043", lessonId: 4, type: "sentence", arabic: "الكَنزة الخَضْرَة.", romanization: "íl-kanze íl-khaDra.", altRomanizations: [], english: "the green t-shirt", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-044", lessonId: 4, type: "sentence", arabic: "البَنْطلون الأزْرَق.", romanization: "íl-banTaloon íl-azra'.", altRomanizations: [], english: "the blue pants", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-045", lessonId: 4, type: "sentence", arabic: "كَنْزة حَمْرَة.", romanization: "kanze 7amra.", altRomanizations: [], english: "a red t-shirt", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-046", lessonId: 4, type: "sentence", arabic: "الِفستان الأصْفَر.", romanization: "íl-fístaan íl-aSfar.", altRomanizations: [], english: "the yellow dress", direction: "ar->en", grammarNote: null },
+    { id: "l4-s-047", lessonId: 4, type: "sentence", arabic: "البَنْطلون أصْفَر.", romanization: "íl-banTaloon aSfar.", altRomanizations: [], english: "the pants are yellow", direction: "ar->en", grammarNote: null }
+  ],
+  dialogues: []
+};
